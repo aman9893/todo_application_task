@@ -1,0 +1,13 @@
+
+
+<w-filters
+  [filter]="selectedFilter"
+  (filterChange)="changeFilter($event)"
+></w-filters>
+<w-list
+  [items]="visibleItems"
+  [totalItemsCount]="items.length"
+  (add)="addItem($event)"
+  (toggle)="toggle($event)"
+  (edit)="edit($event)"
+></w-list>
